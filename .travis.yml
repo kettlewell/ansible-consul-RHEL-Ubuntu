@@ -24,4 +24,4 @@ script:
   - "ansible-playbook -i ci/inventory ci/$SITE --syntax-check"
 
   # Run the ansible ci playbook
-  - "ansible-playbook -i ci/inventory ci/playbook.yml --connection=local -vvvv"
+  - "ansible-playbook -i ci/inventory ci/playbook.yml --connection=local --sudo -vvvv"
