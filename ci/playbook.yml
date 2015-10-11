@@ -3,7 +3,7 @@
 - name: Test Ubuntu Consul Playbook
   hosts: localhost
   connection: local
-  sudo: yes
+  sudo: no
 
   roles:
     - {role: ../../, consul_install_mode: 'server', consul_conf_bootstrap: true, consul_install_webui: true}
